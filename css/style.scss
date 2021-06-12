@@ -77,4 +77,33 @@ section {
 .planet__container {
     z-index: 101;
     color: $mainBlack;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    height: 100vh;
 }
+
+.planet__title {
+    align-self: center;
+    color: rgba(255,255,255,0.9);
+    z-index: 101;
+    font-size: 1.7rem;
+    
+}
+
+.list {
+    align-self: center;
+    z-index: 101;
+    padding-top: 2rem;
+
+    .items {
+        text-decoration: none;
+        list-style: none;
+        color: #FFF;
+        padding-top: 0.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+

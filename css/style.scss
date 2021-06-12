@@ -1,0 +1,109 @@
+// Variables
+$mainWhite: #FFF;
+$mainBlack: #121212;
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+/*========================== NAV ===================================*/
+.nav__bar {
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1000;
+}
+
+.logo__container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.logo {
+    color: $mainWhite;
+    font-size: 1.6rem;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    width: 40%;
+}
+
+.nav__item {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: $mainWhite;
+    cursor: pointer;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+
+.bg__fit {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-repeat: none;
+    object-fit: cover;
+    z-index: 100;
+}
+
+.planet__container {
+    z-index: 101;
+    color: $mainBlack;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.planet__title {
+    align-self: center;
+    color: rgba(255,255,255,0.9);
+    z-index: 101;
+    font-size: 1.7rem;
+    
+}
+
+.list {
+    align-self: center;
+    z-index: 101;
+    padding-top: 2rem;
+
+    .items {
+        text-decoration: none;
+        list-style: none;
+        color: #FFF;
+        padding-top: 0.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+
